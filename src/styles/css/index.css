@@ -1,0 +1,170 @@
+.forms {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #effbff;
+  font-size: 1rem;
+}
+
+.forms h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.form {
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 1.5em;
+  width: 90%;
+  max-width: 400px;
+}
+
+.form h3 {
+  text-align: center;
+  margin-bottom: 1.5em;
+  color: #005792;
+  font-size: 1.5em;
+}
+
+.form .form-name,
+.form .form-email,
+.form .form-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-top: 1.5em;
+}
+
+.form .form-name label,
+.form .form-email label,
+.form .form-password label {
+  width: 30%;
+  padding: .8em 0;
+}
+
+.form .form-name input,
+.form .form-email input,
+.form .form-password input {
+  width: 70%;
+  background: transparent;
+  border: 1px solid #00204a;
+  padding: .8em;
+}
+
+.form .form-name input:focus,
+.form .form-email input:focus,
+.form .form-password input:focus {
+  border: 1.5px solid #005792;
+  outline: none;
+}
+
+.form .form-name .password-container,
+.form .form-email .password-container,
+.form .form-password .password-container {
+  width: 70%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form .form-name .password-container input,
+.form .form-email .password-container input,
+.form .form-password .password-container input {
+  width: 90%;
+  padding: .8em;
+}
+
+.form .form-name .password-container button,
+.form .form-email .password-container button,
+.form .form-password .password-container button {
+  width: 10%;
+  padding: 1em 0;
+  text-align: center;
+  border: 1px solid #005792;
+  background-color: #005792;
+  color: #effbff;
+}
+
+.form .form-name .password-container button:hover, .form .form-name .password-container button:focus,
+.form .form-email .password-container button:hover,
+.form .form-email .password-container button:focus,
+.form .form-password .password-container button:hover,
+.form .form-password .password-container button:focus {
+  cursor: pointer;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 1em;
+  background-color: #00204a;
+  color: #effbff;
+  border: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  font-size: 1em;
+  margin-top: 1.5em;
+}
+
+.form-submit:hover, .form-submit:focus {
+  background: #005792;
+  cursor: pointer;
+}
+
+.form .dont {
+  margin: 1.2em 0 .8em 0;
+  text-align: center;
+}
+
+.form .dont a {
+  text-decoration: none;
+  color: #00204a;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  padding: .5em;
+  display: inline-block;
+}
+
+.form .dont a:hover, .form .dont a:focus {
+  color: #effbff;
+  background-color: #005792;
+}
+
+.form .form-warning {
+  color: brown;
+  font-size: .8em;
+  margin-top: .2em;
+  margin-bottom: 1em;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+/*# sourceMappingURL=index.css.map */
