@@ -1,0 +1,119 @@
+.forms {
+    height: 100vh;
+    @include center;
+    flex-direction: column;
+    background-color: $primary;
+    font-size: 1rem;
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 1em;
+    }
+}
+
+.form {
+
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1);
+    padding: 1.5em;
+    width: 90%;
+    max-width: 400px;
+
+    h3 {
+        text-align: center;
+        margin-bottom: 1.5em;
+        color: $secondary;
+        font-size: 1.5em;
+    }
+
+    .form-name,
+    .form-email,
+    .form-password {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 1.5em;
+
+        label {
+            width: 30%;
+            padding: .8em 0;
+
+        }
+
+        input {
+            width: 70%;
+            background: transparent;
+            border: 1px solid $dark;
+            padding: .8em;
+
+            &:focus {
+                border: 1.5px solid $secondary;
+                outline: none;
+            }
+        }
+
+        .password-container {
+            width: 70%;
+            height: max-content;
+            display: flex;
+            // outline: 1px solid red;
+
+            input {
+                width: 90%;
+                padding: .8em;
+                // height: max-content;
+            }
+
+            button {
+                width: 10%;
+                padding: 1em 0;
+                text-align: center;
+                border: 1px solid $secondary;
+                background-color: $secondary;
+                color: $primary;
+
+                &:hover,
+                &:focus {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &-submit {
+        width: 100%;
+        padding: 1em;
+        background-color: $dark;
+        color: $primary;
+        border: none;
+        @include transition;
+        font-size: 1em;
+        margin-top: 1.5em;
+
+        &:hover,
+        &:focus {
+            background: $secondary;
+            cursor: pointer;
+        }
+    }
+
+    .dont {
+        margin: 1.2em 0 .8em 0;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: $dark;
+            @include transition;
+            padding: .5em;
+            display: inline-block;
+
+
+            &:hover,
+            &:focus {
+                color: $primary;
+                background-color: $secondary;
+            }
+        }
+    }
+
+}
